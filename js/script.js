@@ -27,6 +27,9 @@ console.log(lastNameField, kmsField, userAgeField, buttonGenField, buttonCanFiel
 
 // Prezzo per Km
 const pricePerkms = 0.21;
+// Offerta
+let discount20 = 0.20
+let discount40 = 0.40
 // Variabile Offerta
 let offerName = 'Biglietto Standard';
 
@@ -45,10 +48,10 @@ buttonGenField.addEventListener('click', function(){
     //Calcolo Sconto
     if (userAgeValue === 'underage') {
         offerName = 'Offerta del 20%'
-        price = (price * 20) / 100;
+        price = price * (1 - discount20);
     } else if (userAgeValue === 'over'){
         offerName = 'Offerta del 40%'
-        price = (price * 40) / 100;
+        price = price * (1 - discount40);
     }
 
     console.log (price, offerName);

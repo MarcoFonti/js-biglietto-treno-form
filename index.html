@@ -17,7 +17,7 @@
             <h1 class="text-white h3 text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
             <div class="card">
                 <div class="card-body">
-                    <div class="row row-cols-1 row-cols-3">
+                    <div class="row row-cols-1 row-cols-md-3">
                         <div class="col">
                             <div class="mb-3">
                                 <label for="lastName" class="form-label text-danger">Nome Cognome</label>
@@ -50,36 +50,35 @@
         <section id="recipe-ticket">
             <h1 class="text-white h3 text-center pt-4">IL TUO BIGLIETTO</h1>
             <div class="card">
-                    <div class="card-header">
-                        <h5>DETTAGLIO PASSEGGIERI</h5>
+                <div class="card-header">
+                    <h5>DETTAGLIO PASSEGGIERI</h5>
+                </div>
+                <div class="card-body row p-4">
+                    <div class="col-4 bg-body-secondary py-3 border border-end-0 border-black">
+                        <h6>NOME PASSEGGERO</h6>
+                        <div id="lastName-passenger"></div>
                     </div>
-                    <div class="card-body row p-4">
-                        <div class="col-4 bg-body-secondary py-3 border border-end-0 border-black">
-                            <h6>NOME PASSEGGERO</h6>
-                            <div id="lastName-passenger"></div>
-                        </div>
-                        <div class="col-8 py-3 border border-start-0 border-black">
-                            <div class="row row-cols-1 row-cols-4">
-                                <div class="col">
-                                    <h6 class="mb-5">Offerta</h6>
-                                    <div id="offer"></div>
-                                </div>
-                                <div class="col">
-                                    <h6 class="mb-5">Carrozza</h6>
-                                    <div id="carriage"></div>
-                                </div>
-                                <div class="col">
-                                    <h6 class="mb-5">Codice CP</h6>
-                                    <div id="code-cp"></div>
-                                </div>
-                                <div class="col">
-                                    <h6 class="mb-5">Costo biglietto</h6>
-                                    <div id="price"></div>
-                                </div>
+                    <div class="col-8 py-3 border border-start-0 border-black">
+                        <div class="row row-cols-1 row-cols-md-4">
+                            <div class="col">
+                                <h6 class="mb-5">Offerta</h6>
+                                <div id="offer"></div>
+                            </div>
+                            <div class="col">
+                                <h6 class="mb-5">Carrozza</h6>
+                                <div id="carriage"></div>
+                            </div>
+                            <div class="col">
+                                <h6 class="mb-5">Codice CP</h6>
+                                <div id="code-cp"></div>
+                            </div>
+                            <div class="col">
+                                <h6 class="mb-5">Costo biglietto</h6>
+                                <div id="price"></div>
                             </div>
                         </div>
                     </div>
-                    
+                </div>  
             </div>
         </section>
     </main>
